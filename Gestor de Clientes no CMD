@@ -42,7 +42,7 @@ namespace Gestaoclientes
                     break;
                 case Menu.Listagem: break;
 
-                        //No seu código, a variável booleana escolheusair é inicializada como false. Dentro do laço while, a condição !escolheusair é avaliada como verdadeira enquanto escolheusair for false, ou seja, enquanto o usuário não tiver escolhido sair do programa.
+                        //No código, a variável booleana escolheusair é inicializada como false. Dentro do laço while, a condição !escolheusair é avaliada como verdadeira enquanto escolheusair for false, ou seja, enquanto o usuário não tiver escolhido sair do programa.
 
                        //Dentro do laço while, o menu é exibido na tela e o usuário é solicitado a escolher uma opção.Depois que o usuário escolhe uma opção, a variável opcao é atualizada com o valor correspondente ao menu, usando a expressão(Menu)intop.Em seguida, a estrutura switch é usada para executar um bloco de código correspondente à opção escolhida pelo usuário.
 
