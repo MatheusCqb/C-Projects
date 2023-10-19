@@ -1,0 +1,77 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	fmt.Println("Seja bem-vindo à sua calculadora! Selecione uma das opções:")
+	fmt.Println("1-Somar\n2-Subtração\n3-Dividir\n4-Potência\n5-Multiplicação\n6-Raiz\n7-Sair")
+
+	var suaOpcao int
+	fmt.Scanln(&suaOpcao)
+
+	switch suaOpcao {
+	case 1:
+		fmt.Println("Informe o primeiro número:")
+		var num1 float64
+		fmt.Scanln(&num1)
+		fmt.Println("Informe o segundo número:")
+		var num2 float64
+		fmt.Scanln(&num2)
+		resultado := num1 + num2
+		fmt.Println("Resultado da soma:", resultado)
+	case 2:
+		fmt.Println("Você escolheu a opção de subtração")
+		fmt.Println("Informe o primeiro número:")
+		var numero1 float64
+		fmt.Scanln(&numero1)
+		fmt.Println("Informe o segundo número:")
+		var numero2 float64
+		fmt.Scanln(&numero2)
+		resultado2 := numero1 - numero2
+		fmt.Println("Resultado da subtração:", resultado2)
+	case 3:
+		fmt.Println("Você escolheu a opção de divisão")
+		fmt.Println("Informe o primeiro número:")
+		var numer1 float64
+		fmt.Scanln(&numer1)
+		fmt.Println("Informe o segundo número:")
+		var numer2 float64
+		fmt.Scanln(&numer2)
+		result := numer1 / numer2
+		fmt.Println("Resultado da divisão:", result)
+	case 4:
+		fmt.Println("Você escolheu a opção de potência")
+		fmt.Println("Informe o primeiro número:")
+		var number1 float64
+		fmt.Scanln(&number1)
+		fmt.Println("Informe o segundo número:")
+		var number2 float64
+		fmt.Scanln(&number2)
+		resulte := math.Pow(number1, number2)
+		fmt.Println("Resultado da potência:", resulte)
+	case 5:
+		fmt.Println("Você escolheu a opção de multiplicação")
+		fmt.Println("Informe o primeiro número:")
+		var entrad1 float64
+		fmt.Scanln(&entrad1)
+		fmt.Println("Informe o segundo número:")
+		var entrad2 float64
+		fmt.Scanln(&entrad2)
+		resultinhor2 := entrad1 * entrad2
+		fmt.Println("Resultado da multiplicação:", resultinhor2)
+	case 6:
+		fmt.Println("Você escolheu a opção de raiz quadrada")
+		fmt.Println("Informe o número:")
+		var entrada1 float64
+		fmt.Scanln(&entrada1)
+		resultinho := math.Sqrt(entrada1)
+		fmt.Println("Resultado da raiz quadrada:", resultinho)
+	case 7:
+		fmt.Println("Você escolheu a opção de sair")
+	default:
+		fmt.Println("Opção inválida")
+	}
+}
